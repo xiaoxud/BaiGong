@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "baigong",
+  "version": "0.1.0",
+  "description": "百工 · 你定目标，百工协作。配置多个第三方模型，由主智能体分配任务、审核产出。",
+  "author": { "name": "BaiGong contributors" },
+  "homepage": "https://github.com/xiaoxud/BaiGong",
+  "repository": "https://github.com/xiaoxud/BaiGong",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "百工 BaiGong",
+        "shortDescription": "你定目标，百工协作。",
+        "longDescription": "配置多个第三方模型，由主智能体分配任务、审核文件产出。任务在本机 .work 工作副本中执行。",
+        "developerName": "BaiGong contributors",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://github.com/xiaoxud/BaiGong",
+        "defaultPrompt": ["打开百工配置", "使用百工完成这个项目任务，由主智能体审核产出。"],
+        "brandColor": "#AD5135"
+      }
+    }
+  }
+}

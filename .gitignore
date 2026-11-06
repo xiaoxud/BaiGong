@@ -1,0 +1,9 @@
+node_modules/
+web/app.bundle.js
+.work/
+dist/
+*.tgz
+*.log
+.env
+.env.*
+!.env.example
